@@ -8,15 +8,30 @@
 <body>
 <script>
 $('body').terminal({
+    about: function() {
+	this.echo('Marcelo...');
+    },
+    name: function() {
+        this.echo('Marcelo Galan');
+    },
+    label: function() {
+        this.echo('Computer Engineer');
+    },
+    location: function() {
+        this.echo('The great city of A Coruna');
+    },
     hello: function(what) {
         this.echo('Hello, ' + what +
                   '. Wellcome to this terminal.');
     },
     cat: function() {
         this.echo($('<img src="https://placekitten.com/408/287">'));
+    },
+    help: function() {
+	this.echo('Available Commands:\nhelp - lists help for all the commands.\nabout - about me.\nname - owner of the resume.\nlabel - title.\nlocation - current location\n');
     }
 }, {
-    greetings: 'cv Marcelo Galan - 2020 (C)'
+    greetings: 'Interactive cv - Marcelo Galan - 2020 (C)'
 });
 </script>
 </body>
