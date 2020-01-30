@@ -17,8 +17,23 @@ $('body').terminal({
     label: function() {
         this.echo('\nComputer Engineer\n');
     },
+    education: function() {
+        this.echo('\nEducation...\n');
+    },
+    employment: function() {
+        this.echo('\nEmployment...\n');
+    },
+    socialmedia: function() {
+        this.echo('\nSocialmedia...\n');
+    },
+    languages: function() {
+        this.echo('\nLanguages...\n');
+    },
     location: function() {
         this.echo('\nThe great city of A Coruna\n');
+    },
+    pdf: function() {
+        this.echo('\nPDF...\n');
     },
     hello: function(what) {
         this.echo('Hello, ' + what +
@@ -28,7 +43,7 @@ $('body').terminal({
         this.echo($('<img src="https://placekitten.com/408/287">'));
     },
     help: function() {
-	this.echo('\nAvailable Commands:\n\nhelp - lists help for all the commands.\nabout - about me.\nname - owner of the resume.\nlabel - title.\neducation - education history.\nemployment - employment history.\nsocialmedia - social media profiles.\nlocation - current location\nlanguages - languages.\npdf - pdf version of the resume.\n');
+	this.echo('\nAvailable Commands:\n\nhelp\tlists help for all the commands.\nabout\tabout me.\nname\towner of the resume.\nlabel\ttitle.\neducation\teducation history.\nemployment\temployment history.\nsocialmedia\tsocial media profiles.\nlocation\tcurrent location\nlanguages\tlanguages.\npdf\tpdf version of the resume.\n');
     }
 }, {
     greetings: 'Interactive cv - Marcelo Galan - 2020 (C)'
