@@ -9,16 +9,16 @@
 <script>
 $('body').terminal({
     about: function() {
-	this.echo('Marcelo...');
+	this.echo('\nMarcelo...\n');
     },
     name: function() {
-        this.echo('Marcelo Galan');
+        this.echo('\nMarcelo Galan\n');
     },
     label: function() {
-        this.echo('Computer Engineer');
+        this.echo('\nComputer Engineer\n');
     },
     location: function() {
-        this.echo('The great city of A Coruna');
+        this.echo('\nThe great city of A Coruna\n');
     },
     hello: function(what) {
         this.echo('Hello, ' + what +
@@ -28,7 +28,7 @@ $('body').terminal({
         this.echo($('<img src="https://placekitten.com/408/287">'));
     },
     help: function() {
-	this.echo('Available Commands:\nhelp - lists help for all the commands.\nabout - about me.\nname - owner of the resume.\nlabel - title.\nlocation - current location\n');
+	this.echo('\nAvailable Commands:\n\nhelp - lists help for all the commands.\nabout - about me.\nname - owner of the resume.\nlabel - title.\nlocation - current location\n');
     }
 }, {
     greetings: 'Interactive cv - Marcelo Galan - 2020 (C)'
