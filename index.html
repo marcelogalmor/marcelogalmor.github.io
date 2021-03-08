@@ -11,14 +11,14 @@
         <p>
             <script>
             $('body').terminal({
-                about: function() {
-            	this.echo('\n\tMarcelo...\n');
-                },
                 name: function() {
                     this.echo('\n\tMarcelo Galán Morada\n');
                 },
                 label: function() {
                     this.echo('\n\tIngeniero Informático\n');
+                },
+                about: function() {
+                this.echo('\n\tMe considero una persona responsable y ordenada con inquietudes prsonales y profesionales. Resolutivo, con capacidad de trabajar en equipo y liderazgo. \n');
                 },
                 education: function() {
                     this.echo('\n\t2012-2017 : Grado en Ingeniería Informática, Facultad de Informática - Universidad de A Coruña. Mención Tecnologías de la Información. \n\t\tTFG : 10 (MH) Sistema para la monitorización remota de la acumulación del gas radón en interiores.\n\t\tDescripción : Se desarrolló un sistema de monitorización de niveles de gas radón en interiores, enviando los resultados obtenidos por el sensor a una base de datos centralizada, permitiendo la visualización de estos datos históricos. Para ello se desarrollará un sistema de fácil despliegue, basado en un sensor que envía información a través de una red de comunicaciones, para almacenar los datos en el sistema central y una interfaz gráfica para la monitorización del sistema. Además de protocolo de actuación tras envío de alerta mediante mensajería instantánea.\n\t\tTecnologías : MySQL, Scripting, PHP, HTML5, CSS, Node-Red, MQTT, Mosca, NodeMCU, ESP8266, Raspberry Pi, Telegram.\n\n\t2008-2010 : FP2/Ciclo Superior de Administración de Sistemas Informáticos, I.E.S. Armando Cotarelo Valledor - Vilagarcía de Arousa.\n\n\n\tCertificación/Curso\n\n\t\t2020 : AZ-400/Azure DevOps Engineer Expert, Inditex - Arteixo. Curso: 40 hs.\n\n\t\t2017 : LPIC-2/Administración avanzada de sistemas operativos Linux, CNTG Centro de Novas Tecnoloxías de Galicia - Santiago de Compostela. Curso: 80 hs. Examen: 201-400: 770/800 pts., 202-400: 770/800 pts.\n');
@@ -46,7 +46,7 @@
                     this.echo($('<img src="./images/profile.jpg">'));
                 },
                 help: function() {
-            	this.echo('\nAvailable Commands:\n\nhelp\t\t-\tlists help for all the commands.\nhello\t\t-\tshow custom greeting.\nabout\t\t-\tabout me.\nname\t\t-\towner of the resume.\ncat\t\t\t-\tview my profile picture.\nlabel\t\t-\ttitle.\neducation\t-\teducation history.\nemployment\t-\temployment history.\nsocialmedia\t-\tsocial media profiles.\nlocation\t-\tcurrent location\nlanguages\t-\tlanguages.\npdf\t\t\t-\tpdf version of the resume.\n');
+            	this.echo('\nAvailable Commands:\n\nhelp\t\t-\tlists help for all the commands.\nname\t\t-\towner of the resume.\ncat\t\t\t-\tview my profile picture.\nlabel\t\t-\ttitle.\nabout\t\t-\tabout me.\neducation\t-\teducation history.\nemployment\t-\temployment history.\nlanguages\t-\tlanguages.\nsocialmedia\t-\tsocial media profiles.\npdf\t\t\t-\tpdf version of the resume.\n');
                 }
             }, {
                 greetings: 'Interactive cv - Marcelo Galán Morada - 2021 (C)\n\nType help for commands\n'
